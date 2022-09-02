@@ -12,15 +12,15 @@ int main() {
     if (c == ' ' || c == EOF || c == '\n') {
       word[idx] = '\0';
       if (position + idx > LINEFOLD) {
-	putchar('\n');
-	position = 0;
+        putchar('\n');
+        position = 0;
       }
       printf("%s", word);
       if (c != EOF) {
-	putchar(c);
+        putchar(c);
       }
       if (c == '\n') {
-	position = 0;
+        position = 0;
       }
       position += idx+1;
       idx=0;
